@@ -194,8 +194,6 @@ drop   k1l2m3n debug print
 
 ရှေ့က စကားလုံးကို ပြောင်းပေးရုံပဲ။ `pick` က ဒီအတိုင်းထား၊ `reword` က message ပြင်၊ `squash` နဲ့ `fixup` က အပေါ်က commit နဲ့ပေါင်း (`fixup` က ဒီ commit ရဲ့ message ကို ပစ်လိုက်တယ်)၊ `drop` က ဖျက်။
 
-Conflict တက်ရင် နှစ်ခုလုံးမှာ ဖိုင်ထဲက `<<<<<<<` `=======` `>>>>>>>` တွေကို ပြင်ပြီး `git add` လုပ်ရတာ အတူတူပဲ။ ပြီးရင် merge မှာဆို `git commit`၊ rebase မှာဆို `git rebase --continue`။ ရှုပ်လာရင် `--abort` နဲ့ မစခင်ကို ပြန်သွားလို့ရတယ်။ တစ်ခုသတိထားရမှာက rebase လုပ်နေတုန်း `ours` နဲ့ `theirs` က ပြောင်းပြန်ဖြစ်နေတာ။ Rebase မှာ `ours` က main ဘက်၊ `theirs` က ကိုယ့် feature commit တွေ။ ဒါကို မသိလို့ ကိုယ့်ကုဒ်ကိုယ် ဖျက်မိခဲ့ဖူးတယ်။
-
 နေ့စဉ်လုပ်ဖြစ်တဲ့ အစီအစဉ်ကတော့ ဒီလိုပဲ။ Feature branch ခွဲ၊ `git fetch` ပြီး `git rebase origin/main` နဲ့ update လုပ်၊ PR မတင်ခင် `rebase -i` နဲ့ ရှင်း၊ `--force-with-lease` နဲ့ push၊ ပြီးမှ PR ကနေ main ထဲ merge ဒါမှမဟုတ် squash နဲ့ ပေါင်း။ ဒီလိုဆို feature branch မှာ history သန့်ပြီး main ရဲ့ history ကိုလည်း မထိဘူး။
 
 ဒီထဲက အချက်တွေကို Pro Git စာအုပ် (git-scm.com/book) နဲ့ git-scm.com/docs က git-merge, git-rebase, git-reset, git-reflog စာမျက်နှာတွေကို ကိုးကားပြီး ရေးထားတာပါ။
